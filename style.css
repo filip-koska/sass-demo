@@ -1,0 +1,79 @@
+.hideable {
+  background-color: #42f5b3;
+  color: black;
+  border-style: solid;
+}
+
+@media (max-width: 800px) {
+  .hideable {
+    display: none;
+  }
+}
+.colour_on_hover {
+  background-color: #42f5b3;
+  color: black;
+  border-style: solid;
+}
+
+@media (hover: hover) {
+  .colour_on_hover {
+    background-color: #b2d14b;
+    color: black;
+    border-style: solid;
+  }
+}
+.colour_on_hover_constrained {
+  background-color: #42f5b3;
+  color: black;
+  border-style: solid;
+}
+
+@media (hover: hover) and (min-width: 800px) {
+  .colour_on_hover_constrained {
+    background-color: #b2d14b;
+    color: black;
+    border-style: solid;
+  }
+}
+.flex_reversable_container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .flex_reversable_container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.flex_align_left_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.flex_align_right_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.flex_align_middle_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex_align_uniform_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div {
+  background-color: white;
+  border-style: solid;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
